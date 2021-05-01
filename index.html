@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Enriqueta&display=swap" rel="stylesheet">
+    <script type ="text/javascript" src="index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Health Survey Form</h1>
+          <p id="description" class="description text-center">
+            Please fill out this health survey-form for your own good!
+          </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required/>
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required/>
+            </div>
+            <div class="form-group">
+                <p>Gender</p>
+                <label>
+                  <input name="gender" value="Male" type="radio" class="input-radio" checked/>Male</label>
+            
+                    <label>
+                      <input name="gender" value="Female" type="radio" class="input-radio"/>Female</label>
+                        
+                    <label>
+                      <input name="gender" value="NA" type="radio" class="input-radio"/>NA</label>
+                    </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="1" max="99" class="form-control" placeholder="Age"/>
+            </div>
+            <div class="form-group">
+                <label id="height-label">Height</label>
+                <input type="text" name="height" class="form-control" placeholder="Enter your height in inches"/>
+            </div>
+            <div class="form-group">
+                <label id="weight-label">Weight</label>
+                <input type="text" name="weight" class="form-control" placeholder="Enter your weight in Kgs"/>
+            </div>
+            <div class="form-group">
+              <p>Do You do any exercise?</p>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select Your Exercise Routine</option>
+                <option value="1-3 days a week">1-3 days a week</option>
+                <option value="3-5 days a week">3-5 days a week</option>
+                <option value="Everyday">Everyday</option>
+                <option value="Never">Never</option>
+              </select>
+            </div>
+        
+            <div class="form-group">
+              <p>Do you have any smoking or drinking habits?</p>
+              <label>
+                <input name="smoke-drink" value="Yes" type="radio" class="input-radio" checked/>Yes</label>
+              <label>
+                <input name="smoke-drink" value="Not often" type="radio" class="input-radio"/>Not often</label>
+        
+              <label><input name="smoke-drink" value="No" type="radio" class="input-radio"/>No</label>
+            </div>
+        
+            <div class="form-group">
+              <p>How many hours do you sleep?<span class="clue">(Check all that apply)</span></p>
+        
+              <label><input
+                  name="prefer"
+                  value="Less than 5 hrs"
+                  type="checkbox"
+                  class="input-checkbox"/>Less than 5 hrs</label>
+              <label>
+                <input
+                  name="prefer"
+                  value="5 to 6hrs"
+                  type="checkbox"
+                  class="input-checkbox"/>5 to 6 hrs</label>
+              <label><input
+                  name="prefer"
+                  value="7 to 8 hrs"
+                  type="checkbox"
+                  class="input-checkbox"/>7 to 8 hrs</label>
+              <label
+                ><input
+                  name="prefer"
+                  value="9 to 10 hrs"
+                  type="checkbox"
+                  class="input-checkbox"/>9 to 10 hrs</label>
+              <label
+                ><input
+                  name="prefer"
+                  value="More than 10 hrs"
+                  type="checkbox"
+                  class="input-checkbox"/>More than 10 hrs</label>
+              
+            </div>
+        
+            <div class="form-group">
+              <p>Any comments or suggestions?</p>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."
+              ></textarea>
+            </div>
+        
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        
+</body>
+</html>
